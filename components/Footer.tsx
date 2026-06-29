@@ -43,7 +43,7 @@ export default function Footer() {
               letterSpacing: '0.1em',
             }}
           >
-            AMANAH
+            AMAANAH
           </span>
           <div style={{ width: '2rem', height: '1px', background: '#1e1e1e' }} />
         </div>
