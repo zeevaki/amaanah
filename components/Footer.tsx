@@ -1,13 +1,8 @@
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-
 export default function Footer() {
-  const t = useTranslations('footer');
-
   return (
     <footer
       style={{
-        borderTop: '1px solid #1e1e1e',
+        borderTop: '1px solid #2a2420',
         padding: '3rem 1.5rem',
         textAlign: 'center',
       }}
@@ -18,34 +13,34 @@ export default function Footer() {
             fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: '1.1rem',
             fontStyle: 'italic',
-            color: '#c9a84c',
+            color: '#c8952a',
             marginBottom: '1rem',
           }}
         >
-          {t('tagline')}
+          Power is not a possession. It is a trust.
         </div>
         <div
           style={{
             fontSize: '0.8rem',
-            color: '#4a4a45',
+            color: '#4a4040',
             letterSpacing: '0.05em',
           }}
         >
-          {t('rights')}
+          This is a living manifesto. Share it freely.
         </div>
         <div style={{ marginTop: '1.5rem', display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center' }}>
-          <div style={{ width: '2rem', height: '1px', background: '#1e1e1e' }} />
+          <div style={{ width: '2rem', height: '1px', background: '#2a2420' }} />
           <span
             style={{
               fontFamily: "'Playfair Display', Georgia, serif",
               fontSize: '0.9rem',
-              color: '#2a2a25',
+              color: '#2a2018',
               letterSpacing: '0.1em',
             }}
           >
             AMAANAH
           </span>
-          <div style={{ width: '2rem', height: '1px', background: '#1e1e1e' }} />
+          <div style={{ width: '2rem', height: '1px', background: '#2a2420' }} />
         </div>
       </div>
     </footer>
