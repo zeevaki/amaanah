@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Home",
+    "lines": "The Lines",
+    "freedom": "Are We Truly Free?",
+    "alternative": "The Alternative",
+    "leadership": "New Leadership",
+    "lang": "Language"
+  },
+  "home": {
+    "eyebrow": "A Manifesto on Leadership",
+    "title": "AMANAH",
+    "subtitle": "امانت  •  अमानत  •  Confianza",
+    "tagline": "A Voice for New Leadership",
+    "nameSection": "The Name",
+    "intro1": "Before the revelation. Before the prophecy. Before the religion.",
+    "intro2": "The people of Mecca called him Al-Amin — The Trustworthy. And Al-Sadiq — The Truthful. Not because he was a prophet. Because he was a leader.",
+    "intro3": "He had not yet received a single verse of guidance when his enemies chose him to arbitrate their disputes. When merchants handed him their goods to hold, they didn't ask for a receipt. His word was the receipt.",
+    "intro4": "This website takes its name from that word — Amanah. The trust.",
+    "notReligion": "Not a religious statement. A leadership one.",
+    "supremeCourt": "On the north wall of the United States Supreme Court, carved in marble among eighteen of history's greatest lawgivers, stands the figure of Muhammad. The same country that drew redlining maps around Black neighborhoods officially acknowledges him as one of the world's greatest architects of governance.",
+    "whyMatters": "Why This Matters Now",
+    "body1": "Two men were shot dead on Linfield Road in South Dallas on consecutive days in June 2026. These were not random acts of nature. They were the mathematically predictable result of a century of decisions made by people in rooms far from Linfield Road — people who drew lines on maps, redirected tax dollars, and designed a system where some neighborhoods get banks and others get bullets.",
+    "body2": "The problem is not South Dallas. The problem is leadership that forgot its Amanah.",
+    "missionTitle": "The Mission",
+    "body3": "This manifesto is a question directed at lawmakers, bankers, police chiefs, and educators — not just in Dallas, but in Islamabad, Mumbai, Madrid, and every city where the gap between the powerful and the powerless is treated as natural rather than engineered.",
+    "manifestoQuestion": "What would it look like if those who hold power actually treated it as a trust?",
+    "exploreTitle": "Explore the Questions",
+    "card1Title": "The Lines",
+    "card1Desc": "How borders became weapons — from the Sykes-Picot Agreement to the I-30 divide in Dallas.",
+    "card2Title": "Are We Truly Free?",
+    "card2Desc": "The difference between a paper right and a real one. On liberty, school funding, and the Second Amendment.",
+    "card3Title": "The Alternative",
+    "card3Desc": "Models of governance that actually worked: the Constitution of Medina, Akbar's empire, and what the Supreme Court admits.",
+    "card4Title": "New Leadership",
+    "card4Desc": "Direct questions to lawmakers, bankers, police, and educators. On climate. On the Amanah they owe."
+  },
+  "lines": {
+    "eyebrow": "Chapter One",
+    "title": "The Lines",
+    "subtitle": "How Borders Became Weapons",
+    "s1Title": "June 27–28, 2026 — Linfield Road",
+    "s2Title": "The I-30 Divide",
+    "s3Title": "The Lines Go Deeper",
+    "s4Title": "The Pattern",
+    "nextChapter": "Continue Reading"
+  },
+  "freedom": {
+    "eyebrow": "Chapter Two",
+    "title": "Are We Truly Free?",
+    "subtitle": "The Difference Between a Paper Right and a Real One",
+    "s1Title": "Two Kinds of Freedom",
+    "s2Title": "The School System",
+    "s3Title": "The Second Amendment",
+    "nextChapter": "Continue Reading"
+  },
+  "alternative": {
+    "eyebrow": "Chapter Three",
+    "title": "The Alternative",
+    "subtitle": "Models That Actually Worked",
+    "s1Title": "The Supreme Court's Admission",
+    "s2Title": "The Constitution of Medina (622 CE)",
+    "s3Title": "Emperor Akbar's System (1556–1605)",
+    "s4Title": "The Persian Model (550–330 BCE)",
+    "s5Title": "The Ottoman Millet System (1453–1922)",
+    "s6Title": "What These Models Have in Common",
+    "nextChapter": "Continue Reading"
+  },
+  "leadership": {
+    "eyebrow": "Chapter Four",
+    "title": "A New Leadership",
+    "subtitle": "The Questions That Cannot Wait",
+    "s1Title": "To the Lawmakers",
+    "s2Title": "To the Bankers",
+    "s3Title": "To the Police",
+    "s4Title": "To the Educators",
+    "s5Title": "On Climate Change",
+    "s6Title": "The Question",
+    "closingQuestion": "Do you hold your power as a possession, or as a trust?",
+    "backHome": "Return to Beginning"
+  },
+  "footer": {
+    "tagline": "Power is not a possession. It is a trust.",
+    "rights": "This is a living manifesto. Share it freely."
+  }
+}
