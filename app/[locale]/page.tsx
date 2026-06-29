@@ -44,7 +44,7 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero — full viewport with background image */}
+      {/* Hero */}
       <section
         style={{
           minHeight: '100vh',
@@ -56,32 +56,18 @@ export default function HomePage() {
           padding: '6rem 1.5rem 4rem',
           position: 'relative',
           overflow: 'hidden',
-          backgroundImage: 'url(/hero-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Dark overlay — heavier at top/bottom, lighter in center to let image breathe */}
+        {/* Warm amber radial glow */}
         <div
           style={{
             position: 'absolute',
-            inset: 0,
-            background: 'linear-gradient(to bottom, rgba(10,8,5,0.82) 0%, rgba(10,8,5,0.65) 40%, rgba(10,8,5,0.75) 70%, rgba(10,8,5,0.92) 100%)',
-            pointerEvents: 'none',
-          }}
-        />
-
-        {/* Warm amber glow at center — picks up the image's natural light */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '40%',
+            top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             width: '700px',
-            height: '500px',
-            background: 'radial-gradient(ellipse, rgba(200,149,42,0.12) 0%, transparent 70%)',
+            height: '700px',
+            background: 'radial-gradient(ellipse, rgba(200,149,42,0.07) 0%, transparent 70%)',
             pointerEvents: 'none',
           }}
         />
