@@ -2,14 +2,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #c9a84c;
-  --color-gold-light: #e8c97e;
-  --color-gold-dark: #9a7a30;
-  --color-surface: #0d0d0d;
-  --color-surface-2: #141414;
-  --color-border: #1e1e1e;
-  --color-text: #f0ede8;
-  --color-muted: #6b6b65;
+  /* Warm amber-gold pulled from the image's natural light */
+  --color-gold: #c8952a;
+  --color-gold-light: #e8b84b;
+  --color-gold-dark: #9a6e1a;
+  /* Warm dark surfaces — not cold black, but rich charcoal */
+  --color-surface: #0e0c09;
+  --color-surface-2: #171410;
+  --color-border: #2a2420;
+  --color-text: #f5f0e8;
+  --color-muted: #7a7068;
+  /* Sage green from the plants in the image */
+  --color-sage: #6b7c5a;
+  --color-sage-light: #8a9e76;
+  /* Warm cream from the sunlit room */
+  --color-cream: #f0e8d8;
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -18,8 +25,8 @@
 }
 
 :root {
-  --background: #050505;
-  --foreground: #f0ede8;
+  --background: #0e0c09;
+  --foreground: #f5f0e8;
 }
 
 * {
@@ -65,43 +72,43 @@ body {
 .gold-divider {
   width: 3rem;
   height: 2px;
-  background: #c9a84c;
+  background: #c8952a;
   margin: 1.5rem 0;
 }
 
 /* Pull quote style */
 .pull-quote {
-  border-left: 3px solid #c9a84c;
+  border-left: 3px solid #c8952a;
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.25rem;
-  color: #e8c97e;
+  color: #e8b84b;
   line-height: 1.7;
 }
 
 [dir="rtl"] .pull-quote {
   border-left: none;
-  border-right: 3px solid #c9a84c;
+  border-right: 3px solid #c8952a;
   padding-left: 0;
   padding-right: 1.5rem;
 }
 
 /* Section card hover */
 .section-card {
-  border: 1px solid #1e1e1e;
+  border: 1px solid #2a2420;
   padding: 2rem;
   border-radius: 2px;
-  background: #0a0a0a;
+  background: #131008;
   transition: border-color 0.3s, background 0.3s;
   display: block;
   text-decoration: none;
 }
 
 .section-card:hover {
-  border-color: rgba(201, 168, 76, 0.25);
-  background: #0e0e0e;
+  border-color: rgba(200, 149, 42, 0.3);
+  background: #181209;
 }
 
 /* Section number */

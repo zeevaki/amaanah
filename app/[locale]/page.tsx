@@ -14,7 +14,7 @@ function SectionCard({
 }) {
   return (
     <Link href={href} className="section-card">
-      <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.75rem', fontWeight: 600 }}>
+      <div style={{ fontSize: '0.7rem', color: '#c8952a', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.75rem', fontWeight: 600 }}>
         {number}
       </div>
       <div
@@ -22,17 +22,17 @@ function SectionCard({
           fontFamily: "'Playfair Display', Georgia, serif",
           fontSize: '1.2rem',
           fontWeight: 700,
-          color: '#f0ede8',
+          color: '#f5f0e8',
           marginBottom: '0.75rem',
           lineHeight: 1.3,
         }}
       >
         {title}
       </div>
-      <div style={{ fontSize: '0.9rem', color: '#7a7a75', lineHeight: 1.7 }}>
+      <div style={{ fontSize: '0.9rem', color: '#7a7068', lineHeight: 1.7 }}>
         {desc}
       </div>
-      <div style={{ marginTop: '1.25rem', fontSize: '0.8rem', color: '#c9a84c', letterSpacing: '0.1em' }}>
+      <div style={{ marginTop: '1.25rem', fontSize: '0.8rem', color: '#c8952a', letterSpacing: '0.1em' }}>
         Read →
       </div>
     </Link>
@@ -44,7 +44,7 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero */}
+      {/* Hero — full viewport with background image */}
       <section
         style={{
           minHeight: '100vh',
@@ -56,18 +56,32 @@ export default function HomePage() {
           padding: '6rem 1.5rem 4rem',
           position: 'relative',
           overflow: 'hidden',
+          backgroundImage: 'url(/hero-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Radial glow */}
+        {/* Dark overlay — heavier at top/bottom, lighter in center to let image breathe */}
         <div
           style={{
             position: 'absolute',
-            top: '50%',
+            inset: 0,
+            background: 'linear-gradient(to bottom, rgba(10,8,5,0.82) 0%, rgba(10,8,5,0.65) 40%, rgba(10,8,5,0.75) 70%, rgba(10,8,5,0.92) 100%)',
+            pointerEvents: 'none',
+          }}
+        />
+
+        {/* Warm amber glow at center — picks up the image's natural light */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '40%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '600px',
-            height: '600px',
-            background: 'radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%)',
+            width: '700px',
+            height: '500px',
+            background: 'radial-gradient(ellipse, rgba(200,149,42,0.12) 0%, transparent 70%)',
             pointerEvents: 'none',
           }}
         />
@@ -76,9 +90,9 @@ export default function HomePage() {
           <p
             style={{
               fontSize: '0.7rem',
-              letterSpacing: '0.3em',
+              letterSpacing: '0.35em',
               textTransform: 'uppercase',
-              color: '#c9a84c',
+              color: '#e8b84b',
               marginBottom: '2rem',
               fontWeight: 600,
             }}
@@ -93,8 +107,9 @@ export default function HomePage() {
               fontWeight: 900,
               lineHeight: 0.9,
               letterSpacing: '-0.02em',
-              color: '#f0ede8',
+              color: '#f5f0e8',
               marginBottom: '1rem',
+              textShadow: '0 2px 40px rgba(0,0,0,0.6)',
             }}
           >
             {t('title')}
@@ -103,7 +118,7 @@ export default function HomePage() {
           <p
             style={{
               fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
-              color: '#c9a84c',
+              color: '#e8b84b',
               marginBottom: '1.5rem',
               letterSpacing: '0.05em',
               fontFamily: "'Playfair Display', Georgia, serif",
@@ -115,9 +130,9 @@ export default function HomePage() {
 
           <p
             style={{
-              fontSize: 'clamp(0.85rem, 1.5vw, 1rem)',
-              color: '#7a7a75',
-              letterSpacing: '0.2em',
+              fontSize: 'clamp(0.8rem, 1.5vw, 0.95rem)',
+              color: '#a09880',
+              letterSpacing: '0.25em',
               textTransform: 'uppercase',
               fontWeight: 500,
             }}
@@ -125,35 +140,42 @@ export default function HomePage() {
             {t('tagline')}
           </p>
 
-          <div style={{ width: '3rem', height: '2px', background: '#c9a84c', margin: '3rem auto' }} />
+          <div style={{ width: '3rem', height: '2px', background: '#c8952a', margin: '3rem auto' }} />
 
           <p
             style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              color: '#c0bdb8',
+              fontSize: 'clamp(1rem, 2vw, 1.2rem)',
+              color: '#ddd8cc',
               lineHeight: 1.9,
               maxWidth: '560px',
               margin: '0 auto',
               fontFamily: "'Playfair Display', Georgia, serif",
               fontStyle: 'italic',
+              textShadow: '0 1px 8px rgba(0,0,0,0.5)',
             }}
           >
             {t('intro1')}
           </p>
+
+          {/* Scroll cue */}
+          <div style={{ marginTop: '4rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+            <span style={{ fontSize: '0.65rem', letterSpacing: '0.25em', color: '#6a6050', textTransform: 'uppercase' }}>Scroll</span>
+            <div style={{ width: '1px', height: '2.5rem', background: 'linear-gradient(to bottom, #c8952a, transparent)' }} />
+          </div>
         </div>
       </section>
 
       {/* The Name Section */}
       <section style={{ padding: '6rem 1.5rem', maxWidth: '760px', margin: '0 auto' }}>
-        <p style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem' }}>
+        <p style={{ fontSize: '0.7rem', color: '#c8952a', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem' }}>
           {t('nameSection')}
         </p>
 
-        <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0bdb8', marginBottom: '1.5rem' }}>
+        <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0b8a8', marginBottom: '1.5rem' }}>
           {t('intro2')}
         </p>
 
-        <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0bdb8', marginBottom: '2rem' }}>
+        <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0b8a8', marginBottom: '2rem' }}>
           {t('intro3')}
         </p>
 
@@ -166,7 +188,7 @@ export default function HomePage() {
             fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: '1.3rem',
             fontWeight: 700,
-            color: '#f0ede8',
+            color: '#f5f0e8',
             marginTop: '2rem',
             marginBottom: '2rem',
             lineHeight: 1.5,
@@ -175,7 +197,7 @@ export default function HomePage() {
           {t('notReligion')}
         </p>
 
-        <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#8a8a85' }}>
+        <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#8a8070' }}>
           {t('supremeCourt')}
         </p>
       </section>
@@ -183,18 +205,18 @@ export default function HomePage() {
       {/* Why This Matters */}
       <section
         style={{
-          background: '#0a0a0a',
-          borderTop: '1px solid #1e1e1e',
-          borderBottom: '1px solid #1e1e1e',
+          background: '#121009',
+          borderTop: '1px solid #2a2420',
+          borderBottom: '1px solid #2a2420',
           padding: '6rem 1.5rem',
         }}
       >
         <div style={{ maxWidth: '760px', margin: '0 auto' }}>
-          <p style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem' }}>
+          <p style={{ fontSize: '0.7rem', color: '#c8952a', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem' }}>
             {t('whyMatters')}
           </p>
 
-          <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0bdb8', marginBottom: '1.5rem' }}>
+          <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0b8a8', marginBottom: '1.5rem' }}>
             {t('body1')}
           </p>
 
@@ -203,8 +225,8 @@ export default function HomePage() {
               fontFamily: "'Playfair Display', Georgia, serif",
               fontSize: 'clamp(1.3rem, 3vw, 1.75rem)',
               fontStyle: 'italic',
-              color: '#c9a84c',
-              borderLeft: '3px solid #c9a84c',
+              color: '#c8952a',
+              borderLeft: '3px solid #c8952a',
               paddingLeft: '1.5rem',
               margin: '2.5rem 0',
               lineHeight: 1.5,
@@ -213,11 +235,11 @@ export default function HomePage() {
             {t('body2')}
           </div>
 
-          <p style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem', marginTop: '3rem' }}>
+          <p style={{ fontSize: '0.7rem', color: '#c8952a', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem', marginTop: '3rem' }}>
             {t('missionTitle')}
           </p>
 
-          <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0bdb8', marginBottom: '2rem' }}>
+          <p style={{ fontSize: '1.15rem', lineHeight: 1.9, color: '#c0b8a8', marginBottom: '2rem' }}>
             {t('body3')}
           </p>
 
@@ -226,7 +248,7 @@ export default function HomePage() {
               fontFamily: "'Playfair Display', Georgia, serif",
               fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
               fontStyle: 'italic',
-              color: '#e8c97e',
+              color: '#e8b84b',
               lineHeight: 1.6,
             }}
           >
@@ -241,7 +263,7 @@ export default function HomePage() {
           <p
             style={{
               fontSize: '0.7rem',
-              color: '#c9a84c',
+              color: '#c8952a',
               letterSpacing: '0.25em',
               textTransform: 'uppercase',
               fontWeight: 600,

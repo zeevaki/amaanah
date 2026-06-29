@@ -47,7 +47,7 @@ export default function Navigation() {
     <nav
       style={{
         borderBottom: '1px solid #1e1e1e',
-        background: 'rgba(5,5,5,0.97)',
+        background: 'rgba(10,8,5,0.96)',
         backdropFilter: 'blur(8px)',
         position: 'sticky',
         top: 0,
@@ -68,7 +68,7 @@ export default function Navigation() {
               textDecoration: 'none',
             }}
           >
-            AMANAH
+            AMAANAH
           </Link>
 
           {/* Desktop nav */}
