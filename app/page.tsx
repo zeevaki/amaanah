@@ -22,7 +22,7 @@ export default function HomePage() {
           <p style={{ fontSize: '0.7rem', letterSpacing: '0.35em', textTransform: 'uppercase', color: '#e8b84b', marginBottom: '2rem', fontWeight: 600 }}>
             A Manifesto on Leadership
           </p>
-          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(5rem, 15vw, 11rem)', fontWeight: 900, lineHeight: 0.9, letterSpacing: '-0.02em', color: '#f5f0e8', marginBottom: '1.5rem' }}>
+          <h1 style={{ fontFamily: "'Cinzel Decorative', 'Playfair Display', Georgia, serif", fontSize: 'clamp(2.2rem, 6vw, 5rem)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '0.12em', color: '#f5f0e8', marginBottom: '1.5rem' }}>
             AMAANAH
           </h1>
           <p style={{ fontSize: 'clamp(0.8rem, 1.5vw, 0.95rem)', color: '#a09880', letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 500, marginBottom: '3rem' }}>
